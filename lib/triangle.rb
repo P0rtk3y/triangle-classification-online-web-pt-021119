@@ -26,7 +26,7 @@ class Triangle
     elsif @side_one == @side_two || @side_two == @side_three || @side_three == @side_one 
       return :isosceles
     else 
-      :scalene 
+      return :scalene 
     end 
   end 
 end
