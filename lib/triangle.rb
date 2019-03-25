@@ -10,7 +10,7 @@ class Triangle
   end 
   
   def is_valid?
-    if (side_one + side_two) < side_three || (side_two + side_three) < side_one || (side_one + side_three) < side_two
+    if (side_one + side_two) <= side_three || (side_two + side_three) <= side_one || (side_one + side_three) <= side_two
       raise TriangleError
     elsif side_one <= 0 || side_two <= 0 || side_three <= 0
       raise TriangleError
