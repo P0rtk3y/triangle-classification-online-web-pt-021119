@@ -20,7 +20,7 @@ class Triangle
   end 
     
   def kind 
-    valid? 
+    is_valid? 
     if @side_one == @side_two && @side_three == @side_one
       return :equilateral 
     elsif @side_one == @side_two || @side_two == @side_three || @side_three == @side_one 
